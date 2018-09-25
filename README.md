@@ -8,85 +8,114 @@ Free scripts https://www.hazratsultanbahu.com/scripts/
 Features:-
 ----------
 
-Referrers Tracker
------------------
-•	It track referrers to your site (from which web visitor come to your website) 
-•	How many times 
-•	It display number of hits from referrer web to your web
-•	It also display number of hits from your web to referrer web
-
-Link exchanger 
---------------
-•	You can use this script as link exchanger 
-•	You can display links of other web who display your web link in their web
-•	This script can show your approved links of other web in your web page 
-•	It can also show all links with auto approval 
-•	You can set, after how many clicks from other web it display that web link in your web page
-
-Display links in other than php web pages
------------------------------------------
-•	You can add links in html, htm and other web page including php
-
-Installation 
-------------
-1.	Unzip referrers.zip in your computer / laptop
-2.	Access your web hosting files with FTP or file manger 
-3.	Create referrers folder under your web public_html folder (files need to be transfer in /public_html/referrers/)
-4.	Transfer all files of referrers folder of your computer / laptop folder in created web new referrers folder (transfer files not referrers directory)
-5.	Create new 
-a.	database 
-b.	database user 
-c.	password
-d.	(if you don’t understand how create database, database user name, password learn from this link https://www.hazratsultanbahu.com/scripts/how-to-create-a-database-and-user.php)
-6.	Access yourdomain.com/referrers/ fallow instructions and install you can also access install with yourdomain.com/referrers/install.php (you must replace your own domain in place of yourdomain.com to access installations)
-
-How use it
------------
-Add this code 
-
-<?php
+Referrers Tracker<br>
+-----------------<br>
+• It track referrers to your site (from which web visitor come to your website)
+<br>
+• How many times <br>
+• It display number of hits from referrer web to your web<br>
+• It also display number of hits from your web to referrer web<br>
+<br>
+Link exchanger <br>
+--------------<br>
+• You can use this script as link exchanger <br>
+• You can display links of other web who display your web link in their web<br>
+• This script can show your approved links of other web in your web page <br>
+• It can also show all links with auto approval <br>
+• You can set, after how many clicks from other web it display that web link in 
+your web page<br>
+<br>
+Display links in other than php web pages<br>
+-----------------------------------------<br>
+• You can add links in html, htm and other web page including php<br>
+<br>
+Installation <br>
+------------<br>
+1. Unzip referrers.zip in your computer / laptop<br>
+2. Access your web hosting files with FTP or file manger <br>
+3. Create referrers folder under your web public_html folder (files need to be 
+transfer in /public_html/referrers/)<br>
+4. Transfer all files of referrers folder of your computer / laptop folder in 
+created web new referrers folder (transfer files not referrers directory)<br>
+5. Create new <br>
+a. database <br>
+b. database user <br>
+c. password<br>
+d. (if you don’t understand how create database, database user name, password 
+learn from this link 
+<a href="https://www.hazratsultanbahu.com/scripts/how-to-create-a-database-and-user.php">
+https://www.hazratsultanbahu.com/scripts/how-to-create-a-database-and-user.php</a>)<br>
+6. Access yourdomain.com/referrers/ fallow instructions and install you can also 
+access install with yourdomain.com/referrers/install.php (you must replace your 
+own domain in place of yourdomain.com to access installations)<br>
+<br>
+How use it<br>
+-----------<br>
+Add this code <br>
+<br>
+<code>
+&lt;?php
 include ($_SERVER['DOCUMENT_ROOT'] . '/referrers /log.php');
-?>
-
-in any your web php page to track referrer, it will only track that page which has this code, add in page top first line
-(Don’t add this code in that web page which shows referrers web links)
-
-See yourdomain.com/referrers/example.php (you must replace your own domain in place of yourdomain.com to access THIS PAGE)
-
-To show referrers approved web links
-------------------------------------
-Add this code in any your web php page
-
-<?php
+?&gt;</code>
+<br>
+<br>
+in any your web php page to track referrer, it will only track that page which 
+has this code, add in page top first line<br>
+(Don’t add this code in that web page which shows referrers web links)<br>
+<br>
+See yourdomain.com/referrers/example.php (you must replace your own domain in 
+place of yourdomain.com to access THIS PAGE)<br>
+<br>
+To show referrers approved web links<br>
+------------------------------------<br>
+Add this code in any your web php page<br>
+<br>
+<code>
+&lt;?php
 include ($_SERVER['DOCUMENT_ROOT'] . '/referrers /approved-referrers.php');
-?>
-
-To show random referrers approved web links
--------------------------------------------
-Add this code in any your web php page
-
-<?php
-include ($_SERVER['DOCUMENT_ROOT'] . '/referrers / approved-random-referrers.php');
-?>
-
-To show all referrers web links with out approval 
--------------------------------------------------
-Add this code in any your web php page
-
-<?php
+?&gt;</code>
+<br>
+<br>
+To show random referrers approved web links<br>
+-------------------------------------------<br>
+Add this code in any your web php page<br>
+<br>
+<code>
+&lt;?php
+include ($_SERVER['DOCUMENT_ROOT'] . '/referrers / 
+approved-random-referrers.php');</code>
+<br>
+?&gt;<br>
+<br>
+To show all referrers web links with out approval <br>
+-------------------------------------------------<br>
+Add this code in any your web php page<br>
+<br>
+<code>
+&lt;?php
 include ($_SERVER['DOCUMENT_ROOT'] . '/referrers / all-referrers.php');
-?>
-
-To show referrers approved web links in html page
--------------------------------------------------
-If you want to show approved referrers web links in html page instead of php page add this code in your any web page
-
-<object width="300" height="300” type="text/plain" data="/referrers/referrers.html" border="0" > </object>
-
-Or
-
-<iframe src="/referrers/referrers.html" frameborder="0" height="100%" width="100%"></iframe> 
-
-(Change width="100%" height="100%” as per your need)
-
-For Help and support please visit https://forum.hazratsultanbahu.com/forum/index.php/board,33.0.html
+?&gt;
+</code>
+<br>
+<br>
+To show referrers approved web links in html page<br>
+-------------------------------------------------<br>
+If you want to show approved referrers web links in html page instead of php 
+page add this code in your any web page<br>
+<br>
+<code>
+&lt;object width=&quot;300&quot; height=&quot;300” type=&quot;text/plain&quot; 
+data=&quot;/referrers/referrers.html&quot; border=&quot;0&quot; &gt; &lt;/object&gt;
+</code>
+<br><br>
+Or<br>
+<br>
+<code>
+&lt;iframe src=&quot;/referrers/referrers.html&quot; frameborder=&quot;0&quot; height=&quot;100%&quot; 
+width=&quot;100%&quot;&gt;&lt;/iframe&gt;</code>
+<br>
+<br>
+(Change width=&quot;100%&quot; height=&quot;100%” as per your need)<br>
+<br>
+For Help and support please visit 
+<a href="https://forum.hazratsultanbahu.com/forum/index.php/board,33.0.html">https://forum.hazratsultanbahu.com/forum/index.php/board,33.0.html</a> </p>
